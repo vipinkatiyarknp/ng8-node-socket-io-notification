@@ -1,0 +1,30 @@
+<div class="container">
+  <div style="padding:50px">
+    <div class="card" *ngFor="let item of marketStatusToPlot" style="margin-bottom: 10px;box-shadow: 0 0 3px #666;" [style.background-color]="item.bg">
+      <div class="card-body">
+        <span style="display: inline-block;padding-right: 10px;"><b>Date:</b> {{item.date}}</span>
+        <span style="display: inline-block;padding-right: 10px;"><b>Open:</b> {{item.open}}</span>
+        <span style="display: inline-block;padding-right: 10px;"><b>Close:</b> {{item.close}}</span>
+      </div>
+    </div>
+    <!-- <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Open </th>
+          <th>Close</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of marketStatusToPlot">
+          <td>{{item.date}}</td>
+          <td>
+            {{item.open}}
+          </td>
+          <td>{{item.close}}</td>
+        </tr>
+      </tbody>
+    </table> -->
+  </div>
+
+</div>
